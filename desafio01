@@ -1,0 +1,30 @@
+========== Atividade em Equipe ==========
+
+
+ 1 -  O que é e para que serve o comando JOIN? Quando devemos utilizar?
+ 
+ *  O comando JOIN tem como função básica a consulta e junção de tabelas, desde que possuam colunas com relacionamento/referências entre uma com a outra.
+ *  Devemos utilizar quando é necessário retornar múltiplos dados especificados utilizando, por exemplo, o comando WHERE.
+ 
+ 2 -  Sintaxe e quais são os passos para ENTENDER e DOMINAR o JOIN?
+ 
+ *  O padrão de sintaxe vai depender da cultura da empresa, entretanto é de extrema importância destacar os comandos com letras maiúsculas, e para nomes
+    letras minúsculas. Para ENTENDER e DOMINAR o JOIN, antes é necessário compreender como funciona o comando básico SELECT, juntamente com o princípio de 
+    PRIMARY KEY, que é designado para todas as tabelas como forma de identificação interna e exclusiva do BANCO DE DADOS, tendo controle total do próprio sistema.
+    O uso da FOREIGN KEY é de grande importância quando se trata de relação entre tabelas, é utilizado para referenciar uma tabela para com a outra, para quando for
+    executado o comando de SELECT, possibilitar escolher a risca quais colunas e linhas de qual tabela irá aparecer como CONSULTA. O JOIN é identificado como
+    uma instrução de DML (DATA MANIPULATION LANGUAGE). É importante a prática de identação para melhor organização e compreensão da estrutura do código. Abaixo segue exemplos:
+    
+    - SEM IDENTAÇÃO
+    
+        SELECT f.nome, f.telefone, c.id, c.nome FROM fornecedor f INNER JOIN cidade c ON f.cidade_id = c.id;
+    
+    - COM IDENTAÇÃO
+    
+        SELECT 
+            f.nome
+            ,f.telefone
+            ,c.id
+            ,c.nome 
+        FROM fornecedor f 
+        INNER JOIN cidade c ON f.cidade_id = c.id;
