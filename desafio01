@@ -4,7 +4,6 @@
  1 -  O que é e para que serve o comando JOIN? Quando devemos utilizar?
  
  *  O comando JOIN tem como função básica a consulta e junção de tabelas, desde que possuam colunas com relacionamento/referências entre uma com a outra.
- *  Devemos utilizar quando é necessário retornar múltiplos dados especificados utilizando, por exemplo, o comando WHERE.
  
  2 -  Sintaxe e quais são os passos para ENTENDER e DOMINAR o JOIN?
  
