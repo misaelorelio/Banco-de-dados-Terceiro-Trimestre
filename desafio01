@@ -7,12 +7,12 @@
  
  2 -  Sintaxe e quais são os passos para ENTENDER e DOMINAR o JOIN?
  
- *  O padrão de sintaxe vai depender da cultura da empresa, entretanto é de extrema importância destacar os comandos com letras maiúsculas, e para nomes
-    letras minúsculas. Para ENTENDER e DOMINAR o JOIN, antes é necessário compreender como funciona o comando básico SELECT, juntamente com o princípio de 
-    PRIMARY KEY, que é designado para todas as tabelas como forma de identificação interna e exclusiva do BANCO DE DADOS, tendo controle total do próprio sistema.
-    O uso da FOREIGN KEY é de grande importância quando se trata de relação entre tabelas, é utilizado para referenciar uma tabela para com a outra, para quando for
-    executado o comando de SELECT, possibilitar escolher a risca quais colunas e linhas de qual tabela irá aparecer como CONSULTA. O JOIN é identificado como
-    uma instrução de DML (DATA MANIPULATION LANGUAGE). É importante a prática de identação para melhor organização e compreensão da estrutura do código. Abaixo segue exemplos:
+ *  Para ENTENDER e DOMINAR o JOIN, antes é necessário compreender como funciona o comando básico SELECT, juntamente com o princípio de PRIMARY KEY,
+    que é designado para todas as tabelas como forma de identificação interna e exclusiva do BANCO DE DADOS, tendo controle total do próprio sistema.
+    O uso da FOREIGN KEY é de grande importância quando se trata de relação entre tabelas, é utilizado para referenciar uma tabela para com a outra, 
+    para quando for executado o comando de SELECT, possibilitar escolher a risca quais colunas e linhas de qual tabela irá aparecer como CONSULTA. 
+    O JOIN é identificado comO uma instrução de DML (DATA MANIPULATION LANGUAGE). É importante a prática de identação para melhor organização e 
+    compreensão da estrutura do código. Abaixo segue exemplos:
     
     - SEM IDENTAÇÃO
     
