@@ -69,10 +69,45 @@ WHERE estado.ativo = ativo ;
 
 10.	Escreva o comando que liste todas as vendas e o nome do respectivo funcionário que a realizou.
 
-
+SELECT  r.id AS ID_VENDA, 
+        r.valor AS VALOR,  
+        r.total_final AS TOTAL, 
+        r.ativo AS ATIVO, 
+        r.numero_parcelas AS PARCELAS, 
+        fu.nome AS NOME_FUNCIONARIO 
+FROM recebimento r
+INNER JOIN venda v
+INNER JOIN item_caixa ic
+INNER JOIN caixa ca 
+INNER JOIN funcionario fu
+ON r.venda_id = v.id 
+AND ca.id = ic.caixa_id
+AND ca.funcionario_id = fu.id
 
 11.	Liste o nome dos produtos, o preço de venda e o nome da unidade de medida.
+
+SELECT nome, 
+    descricao, 
+    preco 
+FROM  produto 
+
 12.	Liste o nome dos produtos da marca "Coca-cola".
+
+SELECT *  
+FROM  
+    produto 
+WHERE 
+    nome 
+LIKE 
+    '%Coca-Cola%'
+   
+----------------------------------OU
+Descobrir o ID da "Coca-Cola" e fazer um filtro por ID EX:
+
+SELECT *
+FROM produto
+WHERE id = x
+
 13. DESAFIO!!! Liste os nomes dos clientes do estado de São Paulo que já compraram o produto 'REFRIGERANTE COCA-COLA GARRAFA PET 3 L'.
 
 Semântica
