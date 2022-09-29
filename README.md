@@ -110,12 +110,31 @@ WHERE id = x
 
 13. DESAFIO!!! Liste os nomes dos clientes do estado de São Paulo que já compraram o produto 'REFRIGERANTE COCA-COLA GARRAFA PET 3 L'.
 
+select distinct pd.nome, cli.nome, es.nome from venda v
+    inner join item_venda iv 
+    inner join produto pd
+    inner join cliente cli
+    inner join estado es
+    inner join cidade ci
+where v.id = iv.venda_id and
+    pd.id = iv.produto_id and
+    cli.id = v.cliente_id and
+    cli.cidade_id = ci.id and
+    ci.estado_id = es.id and
+    pd.id = 10 and
+    es.nome = "SÃO PAULO"
+
 Semântica
 1.	Em que caso devemos utilizar o JOIN? Quais tabelas podem ser utilizando em um comando JOIN?
+    R: Quando vamos realizar junção de específicas colunas de diferentes tabelas, aonde ocorre a referência de uma tabela com outra, sendo PK como principal de cada uma e FK para referenciar.
 2.	No caso do JOIN, o que é condição de junção. Qual cuidado devemos ter. 
-3.	Em relação a sintaxe, em um JOIN não é necessário utilizarmos condições (WHERE) - o comando irá executar normalmente. Porém, em questão de semântica, a cada junção é necessário ter ao menos 1 condição. Explique.
-4.	O que é produto cartesiano? Como funciona? Qual a relação com o JOIN.
-5.	Na elaboração de um consulta que envolve 1587 tabelas, serão necessários, quantas condições de junção?
+    R: É um caso aonde ocorre a comparação de tabelas, nesse caso a relação de uma com a outra. Deve-se ter cuidado ao unir as tabelas, para evitar o produto cartesiano de todos os itens combinados.
+3.	Em relação a sintaxe, em um JOIN não é necessário utilizarmos condições (WHERE) - o comando irá executar normalmente. Porém, em questão de semântica, a cada junção  necessário ter ao menos 1 condição. Explique.
+    R: Para realizar uma consulta em específica entre duas tabelas, é necessário uma condição de referência que combina ambas, quer dizer que, a cada junção entre 2 tabelas vai 1 condição. Se por exemplo tiver que realizar a consulta de 10 tabelas em específica, irá precisar de t-1 para referênciar.
+5.	O que é produto cartesiano? Como funciona? Qual a relação com o JOIN.
+    R: 
+6.	Na elaboração de um consulta que envolve 1587 tabelas, serão necessários, quantas condições de junção?
+    R: 
 
  */
 
