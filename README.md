@@ -140,15 +140,15 @@ Estado - Paraná , São Paulo, Bahia
 O produto cartesiano ficaria:
 Paraná  - Paranavaí
 Paraná - São Paulo
-Paraná -  Bahia 
+Paraná -  Salvador 
 
 São Paulo - Paranavaí
 São Paulo - São Paulo
-São Paulo -  Bahia 
+São Paulo -  Salvador
 
 Bahia - Paranavaí
 Bahia  - São Paulo
-Bahia  -  Bahia 
+Bahia  -  Salvador
 
 A relação com o JOIN  se dá pela relação entre tabelas e suas respectivas colunas através da Fk. Caso não haja a comparação entre a FK de uma determinada tabela com a PK, os valores de cada tabela terá a mesma situação do produto cartesiano.
 
