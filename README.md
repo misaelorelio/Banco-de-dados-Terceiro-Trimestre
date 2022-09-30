@@ -132,9 +132,28 @@ Semântica
 3.	Em relação a sintaxe, em um JOIN não é necessário utilizarmos condições (WHERE) - o comando irá executar normalmente. Porém, em questão de semântica, a cada junção  necessário ter ao menos 1 condição. Explique.
     R: Para realizar uma consulta em específica entre duas tabelas, é necessário uma condição de referência que combina ambas, quer dizer que, a cada junção entre 2 tabelas vai 1 condição. Se por exemplo tiver que realizar a consulta de 10 tabelas em específica, irá precisar de t-1 para referênciar.
 5.	O que é produto cartesiano? Como funciona? Qual a relação com o JOIN.
-    R: 
+    R: O produto cartesiano multiplica em pares tabelas distintas. Por exemplo:
+considere tabelas:
+cidade - Paranavaí, São Paulo, Salvador
+Estado - Paraná , São Paulo, Bahia 
+
+O produto cartesiano ficaria:
+Paraná  - Paranavaí
+Paraná - São Paulo
+Paraná -  Bahia 
+
+São Paulo - Paranavaí
+São Paulo - São Paulo
+São Paulo -  Bahia 
+
+Bahia - Paranavaí
+Bahia  - São Paulo
+Bahia  -  Bahia 
+
+A relação com o JOIN  se dá pela relação entre tabelas e suas respectivas colunas através da Fk. Caso não haja a comparação entre a FK de uma determinada tabela com a PK, os valores de cada tabela terá a mesma situação do produto cartesiano.
+
 6.	Na elaboração de um consulta que envolve 1587 tabelas, serão necessários, quantas condições de junção?
-    R: 
+    R: 1586 condições.
 
  */
 
