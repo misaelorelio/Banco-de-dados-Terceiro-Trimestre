@@ -1,0 +1,43 @@
+#1 Liste os nomes de todas as cidades ATIVAS do estado PARANÁ.
+SELECT c.nome
+FROM cidade c
+INNER JOIN estado e
+WHERE e.id = c.estado_id
+AND c.estado_id = 1;
+
+# 5. Informe o nome dos produtos e a respectiva unidade de medida da venda com o código 3.
+
+SELECT p.nome, um.nome
+FROM produto p
+INNER JOIN unidade_medida um
+WHERE p.unidade_medida_id = um.id
+AND um.id = 3;
+
+# 7. Liste os nomes dos fornecedores dos estados PARANÁ, MATO GROSSO e RIO GRANDE DO NORTE.
+
+    #Não temos tabela fornecedor
+
+# 9. Feliz com um bom atendimento, um determinado cliente entra em contato com o gerente para enviar uma lembrança ao funcionário.
+# O problema é que, além de não informar a sua identidade, ele não lembra do nome do funcionário. Sabe apenas que,na conversa, moraram 
+# na mesma cidade e possuem o mesmo nome. Neste contexto, faça as consultas necesárias para identificar o funcionário. 
+
+SELECT cli.nome AS NOME_CLIENTE, fu.nome  AS NOME_FUNCIONARIO
+FROM cliente cli
+INNER JOIN funcionario fu
+WHERE fu.nome = cli.nome;
+
+
+# 11. De acordo com o projeto do SEU COLEGA, elabore uma consulta RELEVANTE que ajude de alguma forma a empresa. 
+# A consulta deve envolver mais de 4 tabelas.
+
+SELECT DISTINCT pd.nome, it.quantidade, ma.nome, cli.nome
+FROM produto pd
+INNER JOIN item_venda it
+INNER JOIN marca ma
+INNER JOIN cliente cli
+INNER JOIN venda ve
+WHERE pd.id = it.produto_id
+AND pd.marca_id = ma.id
+AND ve.cliente_id = cli.id
+
+ 
