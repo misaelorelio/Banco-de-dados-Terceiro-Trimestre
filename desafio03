@@ -5,6 +5,14 @@ INNER JOIN estado e
 WHERE e.id = c.estado_id
 AND c.estado_id = 1;
 
+/*2*/
+ 
+/* R: Não tem como realizar a consulta, pois não existe tabela Fornecedores. */
+
+/*4*/
+  
+/* R: Não existe região na tabela. */
+
 # 5. Informe o nome dos produtos e a respectiva unidade de medida da venda com o código 3.
 
 SELECT p.nome, um.nome
@@ -13,9 +21,31 @@ INNER JOIN unidade_medida um
 WHERE p.unidade_medida_id = um.id
 AND um.id = 3;
 
+/*6*/
+
+SELECT DISTINCT pd.nome produto, fu.nome funcionario, es.nome estado
+from venda v 
+inner join item_venda iv 
+inner join produto pd 
+inner join funcionario fu
+inner join estado es 
+inner join cidade ci 
+where v.id = iv.venda_id 
+and pd.id = iv.produto_id 
+and fu.id = v.funcionario_id 
+and fu.cidade_id = ci.id 
+and ci.estado_id = es.id 
+and pd.id = 10 
+and es.nome = "SÃO PAULO";
+
 # 7. Liste os nomes dos fornecedores dos estados PARANÁ, MATO GROSSO e RIO GRANDE DO NORTE.
 
-    #Não temos tabela fornecedor
+#Não temos tabela fornecedor 
+ 
+/*8*/
+
+SELECT distinct pd.nome, vd.data
+FROM produto pd, venda vd;
 
 # 9. Feliz com um bom atendimento, um determinado cliente entra em contato com o gerente para enviar uma lembrança ao funcionário.
 # O problema é que, além de não informar a sua identidade, ele não lembra do nome do funcionário. Sabe apenas que,na conversa, moraram 
@@ -38,6 +68,4 @@ INNER JOIN cliente cli
 INNER JOIN venda ve
 WHERE pd.id = it.produto_id
 AND pd.marca_id = ma.id
-AND ve.cliente_id = cli.id
-
- 
+AND ve.cliente_id = cli.id;
