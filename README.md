@@ -153,7 +153,7 @@ Bahia  -  Salvador
 A relação com o JOIN  se dá pela relação entre tabelas e suas respectivas colunas através da Fk. Caso não haja a comparação entre a FK de uma determinada tabela com a PK, os valores de cada tabela terá a mesma situação do produto cartesiano.
 
 6.	Na elaboração de um consulta que envolve 1587 tabelas, serão necessários, quantas condições de junção?
-    R: 1586 condições.
+    R: 1586 condições de junção.
 
  */
 
