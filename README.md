@@ -157,3 +157,10 @@ A relação com o JOIN  se dá pela relação entre tabelas e suas respectivas c
 
  */
 
+Auto-avaliação grupo _ 31/10/2022
+
+José Ciriaco - Tenho noção e capacidade de realizar os comandos DML com ótima prática! Reconheço meu esforço e desempenho, acredito que mereço conceito A pela minha dedicação aos estudos, controle e paciência ao lidar com listas de dados.
+
+Jean Moraes - Reconheço a falha no teste aplicado em sala de aula, misturando select 89 com 92. Com maior segurança com o 89, usei com mais frequência durante as aulas, mas arrisquei usar no teste apesar da insegurança. Também tendo em vista que meu erro foi um detalhe, porém banco de dados não se deve ocorrer esse tipo de erro. Estarei me esforçando ainda mais para não se repetir de forma recorrente. Levando em consideração todas as atividades propostas e entregue, diria um B. Acredito que erros deve nos deixar em atenção, mas não desconsiderar todo o resto.
+
+Misael Orélio - Eu tenho a mínima capacidade e compreensão para conseguir elaborar e entender uma consulta com múltiplas tabelas, e o fato de ter tirado um A nessa avaliação, me reforça esse entendimento de que possuo realmente esse pequeno conhecimento. Por ter conseguido se sair bem no desafio proposto, eu acredito merecer conceito A.
